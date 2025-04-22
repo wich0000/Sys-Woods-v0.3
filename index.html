@@ -1,142 +1,198 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="light">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sys-Woods v.03</title>
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sys-Woods v.03</title>
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com" rel="preconnect">
-    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Questrial:wght@400&display=swap"
-        rel="stylesheet">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Noto+Sans&family=Questrial&display=swap"
+    rel="stylesheet" />
 
-    <!-- Vendor CSS Files -->
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
-    <!-- Main CSS File -->
-    <link href="assets/css/main.css" rel="stylesheet">
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet" />
+  <style>
+    html {
+      transition: background-color 0.5s ease, color 0.5s ease;
+    }
+  
+    body {
+      transition: background-color 0.5s ease, color 0.5s ease;
+    }
+  
+    [data-bs-theme="dark"] {
+      background-color: #121212;
+      color: #e4e4e4;
+    }
+  </style>
 </head>
 
 <body class="index-page">
-    <header id="header" class="header d-flex align-items-center sticky-top">
-        <div
-            class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div
+      class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <h1 class="sitename">Sys-Woods v0.3</h1>
+      </a>
 
-            <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-                <!-- <img src="assets/img/logo.webp" alt=""> -->
-                <h1 class="sitename">Sys-Woods v0.3</h1>
-            </a>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Inicio</a></li>
+          <li><a href="#about">Acerca de</a></li>
+          <li><a href="#portfolio">Comunidad</a></li>
+          <li><a href="#services">Servicios</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
 
-            <nav id="navmenu" class="navmenu">
-                <ul>
-                    <li><a href="#hero" class="active">Inicio</a></li>
-                    <li><a href="#about">Acerca de</a></li>
-                    <li><a href="#portfolio">Comunidad</a></li>
-                    <li><a href="#services">Servicios</a></li>
-                    <li><a href="#contact">Contacto</a></li>
-                </ul>
-                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-            </nav>
+      <div class="header-social-links d-flex align-items-center">
+        <a href="#" class="linkedin"><i class="bi bi-whatsapp"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-tiktok"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="twitter"><i class="bi bi-youtube"></i></a>
+        
+      </div>
+    </div>
+    <button id="themeToggle" class="btn btn-outline-secondary ms-3">
+        <i class="bi bi-moon-fill"></i>
+      </button>
+  </header>
 
-            <div class="header-social-links">
-                <a href="#" class="linkedin"><i class="bi bi-whatsapp"></i></a>
-                <a href="#" class="facebook"><i class="bi bi-tiktok"></i></a>
-                <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-                <a href="#" class="twitter"><i class="bi bi-youtube"></i></a>
+  <main class="main">
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row align-items-center content">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="hero-image">
+              <img src="assets/images/men.png" alt="Portfolio Hero Image" class="img-fluid"
+                data-aos="zoom-out" data-aos-delay="300" />
+              <div class="shape-1"></div>
+              <div class="shape-2"></div>
             </div>
-
-        </div>
-    </header>
-
-    <main class="main">
-
-        <!-- Hero Section -->
-        <section id="hero" class="hero section">
-
-            <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-                <div class="row align-items-center content">
-                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-                        <h2>System Woods</h2>
-                        <p class="lead">Generador de Configuraciones Sensitivas para Free Fire.</p>
-                        <div class="cta-buttons" data-aos="fade-up" data-aos-delay="300">
-                            <a href="#portfolio" class="btn btn-primary">Ver mi Trabajo</a>
-                            <a href="#contact" class="btn btn-outline">Contactanos</a>
-                        </div>
-                        <div class="hero-stats" data-aos="fade-up" data-aos-delay="400">
-                            <div class="stat-item">
-                                <span class="stat-number">7+</span>
-                                <span class="stat-label">Años de Experiencia</span>
-                            </div>
-                            <div class="stat-item">
-                                <span class="stat-number">200+</span>
-                                <span class="stat-label">Comunidad</span>
-                            </div>
-                            <div class="stat-item">
-                                <span class="stat-number">150+</span>
-                                <span class="stat-label">Clientes felices</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="hero-image">
-                            <img src="assets/images/men.png" alt="Portfolio Hero Image" class="img-fluid"
-                                data-aos="zoom-out" data-aos-delay="300">
-                            <div class="shape-1"></div>
-                            <div class="shape-2"></div>
-                        </div>
-                    </div>
-                </div>
-
+          </div>
+          <div class="col-lg-6">
+            <h2>System Woods</h2>
+            <p class="lead">Generador de Configuraciones Sensitivas para Free Fire.</p>
+            <div class="cta-buttons" data-aos="fade-up" data-aos-delay="300">
+              <div class="btn-container">
+                <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8"
+                  class="glightbox pulsating-play-btn"></a>
+                <img src="./assets/gif/flecha.gif" alt="Flecha" class="gif-flecha" />
+              </div>
             </div>
-
-        </section><!-- /Hero Section -->
-
-    </main>
-
-    <footer id="footer" class="footer">
-  
-      <div class="container">
-        <div class="copyright text-center ">
-          <p>® <strong class="px-1 sitename">Sys.Woods</strong> <span>Todos los derechos reservados</span></p>
-        </div>
-        <div class="social-links d-flex justify-content-center">
-          <a href=""><i class="bi bi-whatsapp"></i></a>
-          <a href=""><i class="bi bi-youtube"></i></a>
-          <a href=""><i class="bi bi-instagram"></i></a>
-          <a href=""><i class="bi bi-tiktok"></i></a>
-        </div>
-        <div class="credits">
-          Desarrollado por <a href="https://bootstrapmade.com/">wichiTec</a>
+          </div>
         </div>
       </div>
+    </section>
+
+    <!-- Características Section -->
+    <section id="features" class="about section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>System Woods FF</h2>
+        <p>Características Principales</p>
+      </div>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4 align-items-center mb-5">
+          <div class="col-lg-6 d-flex align-items-center">
+            <div class="p-4 rounded-4 shadow">
+              <h2 class="text-center mb-4 fw-bold">Características principales de System Woods FF</h2>
+              <ul style="font-size: 20px;">
+                <li><strong>Ajuste de sensibilidad personalizado:</strong> Mejora la precisión según el modelo del dispositivo.</li>
+                <li><strong>Optimización de rendimiento:</strong> Reduce el lag y mejora la estabilidad.</li>
+                <li><strong>Interfaz sencilla y rápida:</strong> Diseño minimalista.</li>
+                <li><strong>Compatibilidad:</strong> Funciona en una amplia variedad de modelos.</li>
+                <li><strong>Soporte técnico:</strong> Asistencia en caso de dudas.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6 d-flex justify-content-center">
+            <img src="assets/images/systefire.jpeg" class="img-fluid rounded-4 shadow"
+              style="width: 400px;" alt="System Woods FF" />
+          </div>
+        </div>
+
+        <div class="row gy-4 align-items-center">
+          <div class="col-lg-6 d-flex justify-content-center">
+            <img src="assets/images/images.jpeg" class="img-fluid rounded-4 shadow"
+              style="width: 400px;" alt="System Woods FF" />
+          </div>
+          <div class="col-lg-6">
+            <div class="p-4 rounded-4 shadow">
+              <h2 class="text-center mb-4 fw-bold">Más sobre System Woods FF</h2>
+              <p style="font-size: 20px;">
+                System Woods FF es una aplicación para optimizar la experiencia en Free Fire. Permite ajustar sensibilidad, gráficos y rendimiento para mejorar la jugabilidad, especialmente en Android.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer" class="footer">
+    <div class="container text-center">
+      <p>® <strong class="px-1 sitename">Sys.Woods</strong> <span>Todos los derechos reservados</span></p>
+      <div class="social-links d-flex justify-content-center mb-2">
+        <a href=""><i class="bi bi-whatsapp"></i></a>
+        <a href=""><i class="bi bi-youtube"></i></a>
+        <a href=""><i class="bi bi-instagram"></i></a>
+        <a href=""><i class="bi bi-tiktok"></i></a>
+      </div>
+      <div class="credits">
+        Desarrollado por <a href="https://bootstrapmade.com/">wichiTec</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <!-- Dark Mode Toggle Script -->
+  <script>
+    const toggleBtn = document.getElementById('themeToggle');
+    const htmlElement = document.documentElement;
   
-    </footer>
+    toggleBtn.addEventListener('click', () => {
+      const currentTheme = htmlElement.getAttribute('data-bs-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      htmlElement.setAttribute('data-bs-theme', newTheme);
   
-    <!-- Scroll Top -->
-    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+      // Cambia el icono también (opcional)
+      const icon = toggleBtn.querySelector('i');
+      icon.className = newTheme === 'dark' ? 'bi bi-sun-fill' : 'bi bi-moon-fill';
+    });
   
-    <!-- Vendor JS Files -->
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
-    <script src="assets/vendor/aos/aos.js"></script>
-    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  
-    <!-- Main JS File -->
-    <script src="assets/js/main.js"></script>
-  
-  </body>
-  
-  </html>
+    // Tema por defecto (puedes poner 'dark' si prefieres)
+    htmlElement.setAttribute('data-bs-theme', 'light');
+  </script>
+</body>
+
+</html>
