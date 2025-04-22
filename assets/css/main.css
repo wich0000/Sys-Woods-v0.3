@@ -1047,3 +1047,54 @@ button:hover, .btn:hover {
     background: var(--accent-color);
   }
 }
+
+
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  background-color: #030000;
+  padding: 10px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative; /* Fijar la tira en la parte superior */
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Asegura que la tira esté encima de otros elementos */
+}
+
+.marquee-content {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee 30s linear infinite;
+}
+
+.marquee-content span {
+  display: inline-block;
+  margin-right: 50px;
+  font-size: 18px;
+  color: #00DD00; 
+}
+
+@keyframes marquee {
+  from {
+      transform: translateX(100%);
+  }
+  to {
+      transform: translateX(-100%);
+  }
+}
+
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+  .marquee-content {
+      font-size: 14px; /* Ajuste el tamaño de fuente para pantallas más pequeñas */
+      animation-duration: 20s; /* Hacer que la animación sea más lenta en pantallas pequeñas */
+  }
+}
+
+@media (max-width: 480px) {
+  .marquee-content {
+      font-size: 12px; /* Ajuste adicional del tamaño de fuente para pantallas muy pequeñas */
+      animation-duration: 25s; /* Hacer la animación aún más lenta */
+  }
+}
